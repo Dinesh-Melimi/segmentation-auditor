@@ -1,0 +1,6 @@
+{"allow":[
+  {"from":"internet","to":"dmz","services":["tcp/443"]},
+  {"from":"users","to":"servers","services":["tcp/443","tcp/445","tcp/1433"]},
+  {"from":"dmz","to":"servers","services":["tcp/8443"]}
+ ],
+ "deny_always":[["users","scada"],["servers","scada"],["internet","scada"]]}

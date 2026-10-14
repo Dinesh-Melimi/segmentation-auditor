@@ -1,0 +1,9 @@
+[
+ {"id":"10","src_zone":"internet","dst_zone":"dmz","src":"any","dst":"10.10.0.0/24","service":"tcp/443","action":"allow","hits":91234},
+ {"id":"20","src_zone":"internet","dst_zone":"dmz","src":"any","dst":"10.10.0.15/32","service":"tcp/3389","action":"allow","hits":40},
+ {"id":"30","src_zone":"users","dst_zone":"servers","src":"10.20.0.0/16","dst":"10.30.0.0/16","service":"any","action":"allow","hits":5000},
+ {"id":"35","src_zone":"users","dst_zone":"servers","src":"10.20.5.0/24","dst":"10.30.1.10/32","service":"tcp/1433","action":"allow","hits":12},
+ {"id":"40","src_zone":"servers","dst_zone":"scada","src":"10.30.9.0/24","dst":"10.90.0.0/16","service":"tcp/502","action":"allow","hits":3},
+ {"id":"50","src_zone":"dmz","dst_zone":"servers","src":"10.10.0.0/24","dst":"10.30.1.0/24","service":"tcp/8443","action":"allow","hits":0},
+ {"id":"99","src_zone":"any","dst_zone":"any","src":"any","dst":"any","service":"any","action":"deny","hits":0}
+]
