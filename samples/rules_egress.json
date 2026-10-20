@@ -1,0 +1,10 @@
+[
+ {"id":"200","src_zone":"users","dst_zone":"proxy","src":"10.20.0.0/16","dst":"10.5.0.10/32","service":"tcp/8080","action":"allow","hits":880000},
+ {"id":"210","src_zone":"proxy","dst_zone":"internet","src":"10.5.0.10/32","dst":"any","service":"tcp/443","action":"allow","hits":870000},
+ {"id":"220","src_zone":"users","dst_zone":"internet","src":"10.20.8.0/24","dst":"any","service":"tcp/443","action":"allow","hits":15000},
+ {"id":"230","src_zone":"servers","dst_zone":"internet","src":"10.30.4.0/24","dst":"any","service":"tcp/22","action":"allow","hits":40},
+ {"id":"240","src_zone":"servers","dst_zone":"internet","src":"10.30.0.0/16","dst":"any","service":"udp/123","action":"allow","hits":9000},
+ {"id":"250","src_zone":"users","dst_zone":"internet","src":"10.20.0.0/16","dst":"any","service":"udp/53","action":"allow","hits":300},
+ {"id":"260","src_zone":"lab","dst_zone":"internet","src":"10.60.0.0/24","dst":"any","service":"any","action":"allow","hits":12},
+ {"id":"270","src_zone":"proxy","dst_zone":"internet","src":"10.5.0.10/32","dst":"any","service":"tcp/25","action":"allow","hits":0}
+]

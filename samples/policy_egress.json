@@ -1,0 +1,4 @@
+{"allow":[{"from":"users","to":"proxy","services":["tcp/8080"]},{"from":"proxy","to":"internet","services":["tcp/443"]}],
+ "deny_always":[],
+ "egress":{"proxy_zone":"proxy","must_use_proxy":["users","servers"],
+           "allowed_direct":[{"from":"servers","services":["udp/123"]}]}}
